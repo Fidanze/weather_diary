@@ -1,0 +1,26 @@
+.CreateForm {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  &>.FloatLabel{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+  }
+
+  &>.Footer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 10px;
+    width: 100%;
+  }
+}

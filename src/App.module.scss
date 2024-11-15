@@ -1,0 +1,62 @@
+.DeleteComfirmation {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &>.Header {
+    padding: 0 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  @media screen and (max-width: 767px) {
+    margin: 12px;
+    max-width: 743px;
+
+    &>.Header {
+      flex-wrap: wrap;
+
+      &>h1 {
+        font-size: 24px;
+        font-style: normal;
+        letter-spacing: 1px;
+        min-width: 380px;
+      }
+
+      &>.AddButton {
+        font-size: 10px;
+      }
+    }
+
+    &>.Table {
+      font-size: 12px;
+
+      th,
+      td {
+        padding: 0.5rem;
+      }
+
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin: 0 auto;
+    max-width: 896px;
+    min-width: 760px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+    max-width: 1114px;
+  }
+
+}
